@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import "./App.css";
 
 class Form extends Component {
   initialState = {
@@ -27,7 +28,7 @@ submitForm = () => {
   
     return (
       <form>
-        <label  htmlFor="name">Name</label>
+        <label htmlFor="name">Name</label>
         <input
           type="text"
           name="name"
@@ -41,7 +42,7 @@ submitForm = () => {
           id="job"
           value={job}
           onChange={this.handleChange} />
-          <input type="button" value="Submit" onClick={this.submitForm} />
+          <input className='buttons' type="button" value="Submit" onClick={this.submitForm} />
       </form>
     );
   }

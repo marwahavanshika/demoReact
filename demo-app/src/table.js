@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import "./App.css";
+
 
 // class Table extends Component {
 //   render() {
@@ -110,7 +112,7 @@ const TableBody = props => {
             <tr key={index}>
                 <td>{row.name}</td>
                 <td>{row.job}</td>
-                <td><button onClick={() => props.removeCharacter(index)}>Delete</button></td>
+                <td><button className='buttons' onClick={() => props.removeCharacter(index)}>Delete</button></td>
             </tr>
         );
     });
