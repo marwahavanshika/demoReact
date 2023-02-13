@@ -47,7 +47,7 @@ const TableHeader = () => {
     return (
        <tbody>
            <tr>
-             <td>Name2</td>
+             <td>Name1</td>
              <td>Job1</td>
            </tr>
            <tr>
@@ -61,7 +61,7 @@ const TableHeader = () => {
       </tbody>
     )
   }
-  class Table extends Component {
+  class Tables extends Component {
     render() {
       return (
         <table>
