@@ -32,6 +32,7 @@ import React, { Component } from 'react'
 //     )
 //   }
 // }
+
 const TableHeader = () => {
     return (
       <thead>
@@ -43,35 +44,50 @@ const TableHeader = () => {
     )
   }
 
-  const TableBody = () => {
-    return (
-       <tbody>
-           <tr>
-             <td>Name1</td>
-             <td>Job1</td>
-           </tr>
-           <tr>
-             <td>Name2</td>
-             <td>job2</td>
-           </tr>
-           <tr>
-             <td>Name3</td>
-             <td>job3</td>
-           </tr>
-      </tbody>
-    )
+//   const TableBody = () => {
+//     return (
+//        <tbody>
+//            <tr>
+//              <td>Name1</td>
+//              <td>Job1</td>
+//            </tr>
+//            <tr>
+//              <td>Name2</td>
+//              <td>job2</td>
+//            </tr>
+//            <tr>
+//              <td>Name3</td>
+//              <td>job3</td>
+//            </tr>
+//       </tbody>
+//     )
+//   }
+//   class Tables extends Component {
+//     render() {
+//       return (
+//         <table>
+//           <TableHeader />
+//           <TableBody />
+//         </table>
+//       )
+//     }
+//   }
+
+const TableBody = () => {
+    return <tbody />
   }
-  class Tables extends Component {
+
+class Table extends Component {
     render() {
+      const { characterData } = this.props
+  
       return (
         <table>
           <TableHeader />
-          <TableBody />
+          <TableBody characterData={characterData} />
         </table>
       )
     }
   }
-
-
 
 export default Table
