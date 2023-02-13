@@ -63,7 +63,7 @@ class App extends Component {
 
     ]
   }
-}
+
 
 removeCharacter = (index) => {
   const { characters } = this.state
@@ -75,5 +75,15 @@ removeCharacter = (index) => {
   })
 }
 
+render() {
+  const { characters } = this.state
+
+  return (
+    <div className="container">
+      <Table characterData={characters} removeCharacter={this.removeCharacter} />
+    </div>
+  )
+}
+}
 export default App
 
